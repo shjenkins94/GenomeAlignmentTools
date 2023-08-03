@@ -5,7 +5,9 @@
 # This script performs the chain filtering, then nets the filtered chains and filters the nets again. 
 # 2020: Can now be run on delta (our compute cluster) by running the netClass step (this requires a SQL database on a genome browser server) via ssh on genome (our genome browser server)
 # The genome browser server must be ssh-able without password and must be specified in the variable $dbHost below
-#
+
+# FilterChains_Net_FilterNets modified to remove optional netClass and add conversion to maf
+
 use strict;
 use warnings;
 use diagnostics;
